@@ -1,0 +1,12 @@
+<!--           text, url/path -->
+<p><%= link_to "back", root_path  %></p>
+
+<h1><%= @flat["name"] %></h1>
+<img src="<%= @flat["imageUrl"] %>" alt="Flat image" style="max-width: 200px;">
+<dl>
+  <dt>Price:</dt>
+  <dd>
+    <%= @flat["price"] %>
+    <%= @flat["priceCurrency"] %>
+  </dd>
+</dl>
